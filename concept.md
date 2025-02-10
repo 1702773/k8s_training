@@ -1,0 +1,32 @@
+k8s concept by SS 
+===
+Containers容器化是一項革命化技術，透過複製environment,portability,resource efficiency, scalability and unmatched isolation capabilities 來幫助applications進行分散式。<br>
+
+
+
+
+>以下出自於[Google Cloud](https://cloud.google.com/learn/what-is-kubernetes?hl=zh-TW)介紹 <br>
+
+Kubernetes(k8s)是一個以容器為中心的管理軟體，Kubernetes起源於Google Cloud並且受到Google內部叢集管理系統[Borg](https://research.google/pubs/large-scale-cluster-management-at-google-with-borg/)啟發，Kubernetes把所有部屬以及管理程式等環節都精簡畫並提供自動化的容器配置、調度等等便利功能有助於提升作業可靠性、方便性、管理性和減少運作時間和資源。
+
+<h3>Kubernetes的定義</h3>
+
+Kubernetes(縮寫為K8s, 8是指K~s之間有8個字母)，是一種開放原始法系統，可以在任何環境(Windows,Linux等等)部屬、擴充和管理container應用程式。<br>
+k8s會自動執行容器管理的操作工作且內建多種指令用於:1)部屬應用程式、2)持續進行應用程式的變更、3)根據應用程式需求調用資源、4)監控部屬之應用程式。<br>
+透過k8s的內建指令可以簡化應用程式的管理作業。<br>
+
+<h3>Kubernetes和Docker</h3>
+K8s和docker兩者雖然都是用於執行容器化應用程式的不同技術，卻能互相補足彼此的不足。<br>
+Docker會讓您將執行應用程式所需要的資源全部放在一個箱子中，這個箱子可以在需要的時間和位置儲存和開啟。一但開始採用封裝應用程式的做法，就需要一種方法加以管理，<font color="blue">這就是K8s能派上用場的地方</font><br>
+有幾點事情需要釐清一下:<br>
+* 不論有無docker, K8s都可以使用<br>
+* Docker無法取代K8s，將K8s與Docker結合，不但可以將應用程式容器化，還能大規模值行應用程式<br>
+* Docker和K8s之間的差異與各自在容器化和值行應用程式中所扮演的角色有關<br>
+* Docker是一種開放性業界標準，可用於將應用程式瘋裝病分散到容器中<br>
+* K8s會使用Docker來部屬、管理和擴充容器化應用程式<br>
+
+以上為Google cloud中告訴我們有關於K8s的用途以及和Docker的配合用途，接下來我們需要理解K8s的工作原理
+
+
+
+
