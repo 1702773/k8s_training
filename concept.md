@@ -37,14 +37,29 @@ K8s是現今最廣為人知的open-source container orchestration tool, K8s帶�
 
 ![The main components of a Kubernetes cluster](https://assets.gcore.pro/blog_containerizing_prod/uploads/2023/03/top-10-container-orchestration-tools-1.png "image")
 K8s的框架由4個主要conponent(元件)組成:
-*  Node---
-*  Cluster
-*  Replication Controllers
-*  Labels
+*  Node: 在K8s中，node負責容器附載的執行並且可以是實體也可以是虛擬的，這些machines作為容器runtimes的hosts同時也促進容器和K8s service之的通訊
+*  Cluster:  Cluster是由一組nodes組成，這些nodes會share資源以及執行容器化應用程式。
+*  Replication Controllers: 智慧agents用於scheduling容器之間的資源分配。
+*  Labels: K8s服務所使用的tags，用於分辨容器是屬於哪一個pod。
+
+K8s持續地在成為最受歡迎的部屬open-source平台工具，
 
 
 Gcore Managed Kubernetes
 ===
+Gcore Managed Kubernetes允許使用者較為容易的執行一個production-ready的K8s cluster，這個service幫助你從maintaining node、deployment、management、control plane management and K8s version updates中視放出來，你只需要管理工作node即可<br>
+因為不需要擔心維護基礎設備，Gcore Managed K8s 允許你專心在部屬應用程式方面，這個service在全球15個地點提供服務，其中包含美國、歐洲和亞洲
+![How Gcore Managed K8s works](https://assets.gcore.pro/blog_containerizing_prod/uploads/2023/03/top-10-container-orchestration-tools-2.png "image")
+
+Gcore Managed K8s的key features如下:
+*  Bare Metal worker nodel
+*  Free cluster management with a 99.9% SLA
+*  Great value prices for worker nodes
+*  NVIDIA GPU-based worker nodes
+*  Secure master node management
+*  Autoscaling
+*  Self-healing
+*  Cilium CNI support
 
 
 Gcore Container as a Service
