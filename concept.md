@@ -52,15 +52,17 @@ Gcore Managed Kubernetes允許使用者較為容易的執行一個production-rea
 ![How Gcore Managed K8s works](https://assets.gcore.pro/blog_containerizing_prod/uploads/2023/03/top-10-container-orchestration-tools-2.png "image")
 
 Gcore Managed K8s的key features如下:
-*  Bare Metal worker nodel
-*  Free cluster management with a 99.9% SLA
-*  Great value prices for worker nodes
-*  NVIDIA GPU-based worker nodes
-*  Secure master node management
-*  Autoscaling
-*  Self-healing
-*  Cilium CNI support
+*  Bare Metal worker nodel(裸機?工作節點)，除了VM之外會使用Bare Metal worker nodel來進行compute-intensivce workloads，就是運算效率的附載nodel，<font color="red">Bare Metal worker node指的是在K8s叢集中直接執行在物理伺服器上的工作節點，所謂的Bare Metal可以當作物理伺服器</font>。
+*  Free cluster management with a 99.9% SLA(無須叢集管理即可達成99.9SLA)，這使Gcore Managed K8s跟Amazon EKS and GKE不同。
+*  Great value prices for worker nodes(正所謂價格划算)，和Gcore Virtual Machines和Bare Metal servers相同。
+*  NVIDIA GPU-based worker nodes，可用於AL/ML workloads。
+*  Secure master node management(master node管理安全性)，意思是當Gcore administrators確認master node為security和stability(穩定)時沒有任何人可以change master node。
+*  Autoscaling(自動調整規模)，允許你根據real-time的需求自動配置新的node以及刪除不必要的node
+*  Self-healing(自我檢查)，會持續監製nodes的health以及在必要時自動recovers failed nodes。
+*  Cilium CNI support(支援Cilium CNI)，除了Calico之外，該服務允許進階網路以及安全特徵來更簡單的管理large-scale K8s 部屬。
 
+!  <font color="blue">Cilium是一個基於Extended Berkeley Packet Filter的網路解決方案，專門用於K8s這類型的叢集網路</font><br>
+!  <font color="blue">Calico是K8s常見的插件之一，基於Border Gateway Protocol提供簡單且穩定的網路策略和網路隔離能力</font><br>
 
 Gcore Container as a Service
 ===
