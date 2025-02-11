@@ -1,8 +1,17 @@
 k8s concept by SS 
 ===
+>以下出自於[Gcore](https://gcore.com/blog/top-10-container-orchestration-tools/)介紹 
+<br>
+
+目前已經有許多tools被用於迎合各種需求像是:simple to large-scale部屬、強化效率和可擴充性等等。<br>
+Container orchestration tools基本用於管理container的lifecycle其中包含:networking, load balancing, and scaling等等。<br>
+該網站會列出10種container orchestration tools並介紹這些tools的key components, capabilities, helping DevOps teams achieve application resilience(彈性), improved security and simplified operations.<br>
+
+The importance of Container Orchestration
+===
 Containers容器化是一項革命化技術，透過複製environment,portability,resource efficiency, scalability and unmatched isolation capabilities 來幫助applications進行分散式。<br>
-
-
+Container可以幫助我們包裝application來更容易的<font color="Blue">部屬和更新</font>因此我們需要一些特別的tools來管理這些container。<br>
+Orchestration tools提供自動containerized workloads 一個框架，一些tools可以幫助開發團隊管理container的lifecycle以及implement container的networking、load balancing、provisioning；scaling, and more.
 
 
 >以下出自於[Google Cloud](https://cloud.google.com/learn/what-is-kubernetes?hl=zh-TW)介紹 <br>
