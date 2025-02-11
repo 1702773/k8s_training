@@ -35,8 +35,12 @@ Kubernetes(k8s)
 K8s是Google在2008年部屬並於2014移交給Cloud Native Computing Foundation<br>
 K8s是現今最廣為人知的open-source container orchestration tool, K8s帶來很多優點包含:auto-scaling and automated load balancing.<br>
 
-![alt text](https://assets.gcore.pro/blog_containerizing_prod/uploads/2023/03/top-10-container-orchestration-tools-1.png "123")
-
+![The main components of a Kubernetes cluster](https://assets.gcore.pro/blog_containerizing_prod/uploads/2023/03/top-10-container-orchestration-tools-1.png "image")
+K8s的框架由4個主要conponent(元件)組成:
+*  Node---
+*  Cluster
+*  Replication Controllers
+*  Labels
 
 
 Gcore Managed Kubernetes
