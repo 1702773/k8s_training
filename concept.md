@@ -11,7 +11,63 @@ The importance of Container Orchestration
 ===
 Containers容器化是一項革命化技術，透過複製environment,portability,resource efficiency, scalability and unmatched isolation capabilities 來幫助applications進行分散式。<br>
 Container可以幫助我們包裝application來更容易的<font color="Blue">部屬和更新</font>因此我們需要一些特別的tools來管理這些container。<br>
-Orchestration tools提供自動containerized workloads 一個框架，一些tools可以幫助開發團隊管理container的lifecycle以及implement container的networking、load balancing、provisioning；scaling, and more.
+Orchestration tools提供自動containerized workloads 一個框架，一些tools可以幫助開發團隊管理container的lifecycle以及implement container的networking、load balancing、provisioning；scaling, and more.<br>
+目前使用container orchestration tools有以下功能:<br>
+*  Allocation resources among containers(在容器中分配資源)
+*  Scaling containers up and down based on workloads (根據工作附載變換容器大小)
+*  Routing traffic and balancing loads(分流以及附載平衡)
+*  Assigning services and applications to specific containers(給予特定容器分配服務和應用)
+*  Deployment and provisioning(部屬以及配置)
+
+1. Kubernetes
+2. Gcore Managed Kubernetes
+3. Gcore Container as a Service
+4. Red Hat OpenShift
+5. Apache Mesos
+6. Amazon Elastic Container Service(Amazon ECS)
+7. Google Kubernetes Engine(GKE)
+8. Azure Service Fabric
+9. Amazon Elastic Kubernetes Service(EKS)
+10. Docker Swarm
+
+Kubernetes(k8s)
+===
+K8s是Google在2008年部屬並於2014移交給Cloud Native Computing Foundation<br>
+K8s是現今最廣為人知的open-source container orchestration tool, K8s帶來很多優點包含:auto-scaling and automated load balancing.<br>
+
+![alt text](https://assets.gcore.pro/blog_containerizing_prod/uploads/2023/03/top-10-container-orchestration-tools-1.png "123")
+
+
+
+Gcore Managed Kubernetes
+===
+
+
+Gcore Container as a Service
+===
+
+Red Hat OpenShift
+===
+
+Apache Mesos
+===
+
+Amazon Elastic Container Service(Amazon ECS)
+===
+
+Google Kubernetes Engine(GKE)
+===
+
+Azure Service Fabric
+===
+
+Amazon Elastic Kubernetes Service(EKS)
+===
+
+Docker Swarm
+===
+
+
 
 
 >以下出自於[Google Cloud](https://cloud.google.com/learn/what-is-kubernetes?hl=zh-TW)介紹 <br>
