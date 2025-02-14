@@ -114,5 +114,22 @@ Docker會讓您將執行應用程式所需要的資源全部放在一個箱子�
 以上為Google cloud中告訴我們有關於K8s的用途以及和Docker的配合用途，接下來我們需要理解K8s的工作原理
 
 
+下圖為一張K8s架構圖來自[影片](https://www.youtube.com/watch?v=RUjcGn2YeVo)
+![K8s structure](image/k8s_structure.png)
+圖片中包含幾個component:
+*  Cluster
+*  Control plane
+*  node
+*  pod
+*  svc()
+*  ing
+*  deploy
+
+1~多個container會形成pod<br>
+把pod部屬到合適的node中去執行<br>
+pod被視為一台虛擬的電腦主機，當執行了一個pod也代表在虛擬環境中執行了一台主機<br>
+control plane會記錄這些pod的資訊並將這些pod放置到合適的node去執行<br>
+也可以額外利用deploy機制來一次部屬多個pod在多個node中，control plane同樣會記錄deploy的資訊<br>
+當pod都建立成功時，就需要開始處理pod間的網路<br>
 
 
