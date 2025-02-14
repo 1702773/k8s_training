@@ -130,6 +130,19 @@ Docker會讓您將執行應用程式所需要的資源全部放在一個箱子�
 pod被視為一台虛擬的電腦主機，當執行了一個pod也代表在虛擬環境中執行了一台主機<br>
 control plane會記錄這些pod的資訊並將這些pod放置到合適的node去執行<br>
 也可以額外利用deploy機制來一次部屬多個pod在多個node中，control plane同樣會記錄deploy的資訊<br>
-當pod都建立成功時，就需要開始處理pod間的網路<br>
+
+# pod網路規則
+當pod都建立成功時，就需要開始處理pod間的網路連線<br>
+Cluster之間有自己的內網與外部隔絕,當pod被創建時會自動給予一個隨機內網動態IP，由於這個動態IP難以掌控因此我們需要一個路由器來將外部流量導入至內部pod，這類型的路由器元件在K8s中稱為:Service。<br>
+這個Service資訊也會被記錄在Control plane之中，當pod之間的網路可以互通時就需要開始建立Cluster內部與外部的網路連線。<br>
+這時候需要一個虛擬路由器來進行對接，這類型的路由器我們稱為Ingress controller，在實體Cluster當中以pod的形式存在，當我們設定好ingress規則就可以由Ingress controller將流量導入至service再傳遞給對應的pod。<br>
+
+------
+
+此外還有一個namespace的元件用於管理pod和service，每一個pod和service都會隸屬於某個namespace，Kubernetes會為每個pod和service建立各自的DNS Record讓Cluster內部的應用程式之間可以透過這個簡單的DNS規則相互溝通。
+
+透過以上可以大致了解目前Kubernetes中整個Cluster運作的元件以及架構，其中最重要的是control plane，control plane會記錄與管理主要元件(pod,service,ingress controller等等)資訊並且元件與元件之間的關聯與互動同樣會記錄起來
+
+
 
 
